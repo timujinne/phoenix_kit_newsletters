@@ -1,7 +1,7 @@
 defmodule PhoenixKitNewsletters.MixProject do
   use Mix.Project
 
-  @version "0.1.13"
+  @version "0.2.0"
   @source_url "https://github.com/BeamLabEU/phoenix_kit_newsletters"
 
   def project do
@@ -66,7 +66,7 @@ defmodule PhoenixKitNewsletters.MixProject do
       # older core would compile and then fail at runtime on a missing
       # column. Raise it only when a new core migration is likewise
       # required — no path/git override is needed any more.
-      {:phoenix_kit, "~> 1.7 and >= 1.7.211"},
+      {:phoenix_kit, "~> 2.0"},
       {:phoenix_live_view, "~> 1.1"},
       {:gettext, "~> 1.0"},
       {:oban, "~> 2.20"},
@@ -91,7 +91,7 @@ defmodule PhoenixKitNewsletters.MixProject do
       # test suite can build real fixtures instead of only covering the
       # "CRM not installed" degrade path. The contact-lists feature
       # (Lists/ContactList/ListMember) shipped upstream in 0.3.0.
-      {:phoenix_kit_crm, "~> 0.3", only: :test}
+      {:phoenix_kit_crm, "~> 0.6", only: :test}
     ]
   end
 

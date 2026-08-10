@@ -9,7 +9,7 @@ Add to your `mix.exs`:
 ```elixir
 def deps do
   [
-    {:phoenix_kit_newsletters, "~> 0.1"}
+    {:phoenix_kit_newsletters, "~> 0.2"}
     # During development (before Hex publish):
     # {:phoenix_kit_newsletters, github: "BeamLabEU/phoenix_kit_newsletters"}
   ]
